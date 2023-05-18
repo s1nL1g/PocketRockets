@@ -4,7 +4,6 @@ import base.AbstractBaseTest;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
-
 import static org.testng.Assert.assertTrue;
 
 public class LoginTests extends AbstractBaseTest {
@@ -12,6 +11,7 @@ public class LoginTests extends AbstractBaseTest {
     public void loginPositiveTest() {
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = new HomePage(driver);
+
         homePage.clickLoginBtn();
         loginPage.setEmailField()
                 .setPassword()
