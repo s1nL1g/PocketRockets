@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class HomePage extends AbstractBasePage {
+
     private static final String BTN_LOGO = "//img[@alt='delivery group icon']";
     private static final String BTN_DROPDOWN_FAST_START = "//div[@class='fast-start']";
     private static final String COMPANY_NAVIGATION = "//p[contains(text(),'Клієнтам')]";
@@ -13,13 +14,13 @@ public class HomePage extends AbstractBasePage {
     private static final String BTN_GIFT_CLOSE = "//div[@class='gift-close']";
     private static final String BTN_ENTER = "//label[@class='login-block__login-btn']";
     private static final String INPUT_TRACKING = "//input[@class='tracking__input']";
+    private static final String INPUT_SEARCH = "//input[@class='main-search__input']";
 
     public HomePage(WebDriver driver) {
         super(driver);
     }
 
     public WebElement getLogo() {
-
         return driver.findElement(By.xpath(BTN_LOGO));
     }
 
@@ -59,5 +60,9 @@ public class HomePage extends AbstractBasePage {
 
     public WebElement getInputTracking() {
         return driver.findElement(By.xpath(INPUT_TRACKING));
+    }
+
+    public WebElement getInputSearch(){
+        return driver.findElement(By.xpath(INPUT_SEARCH));
     }
 }

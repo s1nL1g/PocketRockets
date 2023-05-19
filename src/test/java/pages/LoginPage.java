@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage extends HomePage {
+
     private static final String BTN_CLOSE_LOGIN_PAGE = "//label[@class='login-block__login-btn']";
     private static final String INPUT_EMAIL = "//input[@name='UserName']";
     private static final String INPUT_PASSWORD = "//input[@name='Password']";
@@ -17,6 +18,7 @@ public class LoginPage extends HomePage {
     public LoginPage(WebDriver driver) {
         super(driver);
     }
+
     public void closeLoginPage() {
         driver.findElement(By.xpath(BTN_CLOSE_LOGIN_PAGE)).click();
     }
@@ -51,8 +53,8 @@ public class LoginPage extends HomePage {
     public WebElement getLoginModalWindow() {
         return driver.findElement(By.xpath(LOGIN_MODAL_WINDOW));
     }
+
     public WebElement getMyAccountBtn(){
         return waitUntilVisibilityOfElement("//p[contains(text(),'Мій кабінет')]");
     }
 }
-
