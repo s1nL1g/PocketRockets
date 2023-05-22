@@ -30,7 +30,7 @@ abstract public class AbstractBaseTest extends AbstractBase {
     @AfterMethod
     public void closeBrowser() {
         log.info("<<<=== Teardown");
-        driver.quit();
+//        driver.quit();
     }
 
     public void openUrl(String url) {

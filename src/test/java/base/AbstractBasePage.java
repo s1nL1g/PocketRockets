@@ -42,8 +42,9 @@ abstract public class AbstractBasePage extends AbstractBase {
         return driver.findElements(By.xpath(locator));
     }
 
-    public void waitUntilUrlContainsText(String urlPath) {
-        wait.until(ExpectedConditions.urlContains(urlPath));
+    public Boolean waitUntilUrlContainsText(String urlPath) {
+        return wait.until(ExpectedConditions.urlContains(urlPath));
+
     }
 
     public void waitUntilNumberOfTabToBe(int tabNumber) {
