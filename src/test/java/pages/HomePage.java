@@ -5,6 +5,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
 public class HomePage extends AbstractBasePage {
     private static final String BTN_LOGO = "//img[@alt='delivery group icon']";
     private static final String BTN_DROPDOWN_FAST_START = "//div[@class='fast-start']";
@@ -59,5 +63,12 @@ public class HomePage extends AbstractBasePage {
 
     public WebElement getInputTracking() {
         return driver.findElement(By.xpath(INPUT_TRACKING));
+    }
+
+    public HomePage goToLastWindow() {
+        Set<String> windowHandles = driver.getWindowHandles();
+        List<String> windows = new ArrayList<>(windowHandles);
+        driver.switchTo().window(windows.get(windows.size() - 1));
+        return this;
     }
 }
