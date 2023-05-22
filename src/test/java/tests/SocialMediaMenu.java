@@ -4,7 +4,6 @@ import base.AbstractBaseTest;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.SocialMenuPage;
-
 import static org.testng.Assert.assertTrue;
 
 public class SocialMediaMenu extends AbstractBaseTest {
