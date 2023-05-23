@@ -8,6 +8,7 @@ import pages.PartnershipTabPage;
 import static org.testng.Assert.assertTrue;
 
 public class PartnershipTabTest extends AbstractBaseTest {
+
     @Test
     public void EpicentrTest() {
         PartnershipTabPage partnershipTabPage = new PartnershipTabPage(driver);
