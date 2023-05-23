@@ -66,6 +66,7 @@ public class InactiveButtonPage extends HomePage {
         getCreateAccBtn().click();
         return this;
     }
+
     public InactiveButtonPage(WebDriver driver) {
         super(driver);
     }
