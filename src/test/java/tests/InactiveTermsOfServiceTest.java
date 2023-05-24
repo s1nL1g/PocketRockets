@@ -5,9 +5,10 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.InactiveTermsOfServicePage;
 
-import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.assertFalse;
 
 public class InactiveTermsOfServiceTest extends AbstractBaseTest {
+
     @Test
     public void inactiveButtonTest() {
         InactiveTermsOfServicePage inactiveTermsOfServicePage = new InactiveTermsOfServicePage(driver);
@@ -20,6 +21,6 @@ public class InactiveTermsOfServiceTest extends AbstractBaseTest {
                 .sendEmail()
                 .sendPassword();
 
-        assertTrue(!inactiveTermsOfServicePage.getCreateAccBtn().isEnabled());
+        assertFalse(inactiveTermsOfServicePage.getCreateAccBtn().isEnabled());
     }
 }
