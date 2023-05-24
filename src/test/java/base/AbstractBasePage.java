@@ -45,7 +45,6 @@ abstract public class AbstractBasePage extends AbstractBase {
 
     public Boolean isWaitUntilUrlContainsText(String urlPath) {
         return wait.until(ExpectedConditions.urlContains(urlPath));
-
     }
 
     public void waitUntilNumberOfTabToBe(int tabNumber) {
