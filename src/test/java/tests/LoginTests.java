@@ -4,6 +4,7 @@ import base.AbstractBaseTest;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
+
 import static org.testng.Assert.assertTrue;
 
 public class LoginTests extends AbstractBaseTest {
