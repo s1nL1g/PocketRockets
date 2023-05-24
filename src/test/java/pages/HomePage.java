@@ -19,6 +19,7 @@ public class HomePage extends AbstractBasePage {
     private static final String BTN_ENTER = "//label[@class='login-block__login-btn']";
     private static final String INPUT_TRACKING = "//input[@class='tracking__input']";
     private static final String INPUT_SEARCH = "//input[@class='main-search__input']";
+    private static final String BTN_VIDDILENIA = "//a[text()='Відділення']";
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -76,5 +77,13 @@ public class HomePage extends AbstractBasePage {
 
         driver.switchTo().window(windows.get(windows.size() - 1));
         return this;
+    }
+    public WebElement getViddileniaBTN() {
+        return driver.findElement(By.xpath(BTN_VIDDILENIA));
+    }
+
+    public ViddileniaPage clickViddilenia() {
+        getViddileniaBTN().click();
+        return new ViddileniaPage(driver);
     }
 }
