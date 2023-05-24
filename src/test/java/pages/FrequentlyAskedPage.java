@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class FrequentlyAskedPage extends HomePage {
+
     private static final String INSURANCE_COST_THM = "//label[@class='questions__label'][contains(text(),'Яка вартість страхування вантажу?')]";
     private static final String INSURANCE_COST_INFO = "//h2[@class='answer__title'][contains(text(),'Яка вартість страхування вантажу?')]";
     private static final String DISCOUNT_THM = "//label[@class='questions__label'][contains(text(),'Як можна отримати знижку?')]";

@@ -7,6 +7,7 @@ import pages.FrequentlyAskedPage;
 import static org.testng.Assert.assertTrue;
 
 public class FrequentlyAskedTest extends AbstractBaseTest {
+
     @Test
     public void frequentlyAskedQuestionsTest() {
         FrequentlyAskedPage frequentlyAskedPage = new FrequentlyAskedPage(driver);
