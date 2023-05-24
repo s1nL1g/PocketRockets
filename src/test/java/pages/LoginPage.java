@@ -17,6 +17,7 @@ public class LoginPage extends HomePage {
     public LoginPage(WebDriver driver) {
         super(driver);
     }
+
     public void closeLoginPage() {
         driver.findElement(By.xpath(BTN_CLOSE_LOGIN_PAGE)).click();
     }
@@ -51,8 +52,8 @@ public class LoginPage extends HomePage {
     public WebElement getLoginModalWindow() {
         return driver.findElement(By.xpath(LOGIN_MODAL_WINDOW));
     }
-    public WebElement getMyAccountBtn(){
+
+    public WebElement getMyAccountBtn() {
         return waitUntilVisibilityOfElement("//p[contains(text(),'Мій кабінет')]");
     }
 }
-

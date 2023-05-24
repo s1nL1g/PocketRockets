@@ -65,7 +65,7 @@ public class HomePage extends AbstractBasePage {
         return driver.findElement(By.xpath(INPUT_TRACKING));
     }
 
-    public HomePage goToLastWindow(){
+    public HomePage goToLastWindow() {
         Set<String> windowHandles = driver.getWindowHandles();
         List<String> windows = new ArrayList<>(windowHandles);
         driver.switchTo().window(windows.get(windows.size() - 1));

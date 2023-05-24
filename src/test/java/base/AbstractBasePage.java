@@ -14,6 +14,7 @@ import java.util.List;
 
 @Slf4j
 abstract public class AbstractBasePage extends AbstractBase {
+
     protected WebDriver driver;
     protected WebDriverWait wait;
     protected Actions actions;
@@ -56,6 +57,4 @@ abstract public class AbstractBasePage extends AbstractBase {
         ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(tabNumber - 1));
     }
-
-
 }

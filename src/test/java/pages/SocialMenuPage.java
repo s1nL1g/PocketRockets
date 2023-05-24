@@ -59,30 +59,30 @@ public class SocialMenuPage extends HomePage {
         return driver.findElement(By.xpath(YTB_CHNL_PAGE));
     }
 
-    public WebElement getFacebookPage(){
+    public WebElement getFacebookPage() {
         return driver.findElement(By.xpath(FCB_PAGE));
     }
 
-    public SocialMenuPage waitUntilFCBBeLoaded(){
+    public SocialMenuPage waitUntilFCBBeLoaded() {
         waitUntilUrlContainsText("https://www.facebook.com/Deliveryauto");
         return this;
     }
 
-    public SocialMenuPage waitUntilYTBBeLoaded(){
+    public SocialMenuPage waitUntilYTBBeLoaded() {
         waitUntilUrlContainsText("https://www.youtube.com/channel/UC2ZxuQoIjvHGl2yR4FeS8qQ/featured");
         return this;
     }
 
-    public WebElement getCloseButtonMDL_WNDW(){
+    public WebElement getCloseButtonMDL_WNDW() {
         return driver.findElement(By.xpath(CLOSE_MOD_WINDW));
     }
 
-    public SocialMenuPage closeModalWindowFCB(){
+    public SocialMenuPage closeModalWindowFCB() {
         getCloseButtonMDL_WNDW().click();
         return this;
     }
 
-    public WebElement getInstagramPage(){
+    public WebElement getInstagramPage() {
         return driver.findElement(By.xpath(INST_PAGE));
     }
 }
