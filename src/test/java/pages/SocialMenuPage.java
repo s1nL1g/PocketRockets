@@ -64,12 +64,12 @@ public class SocialMenuPage extends HomePage {
     }
 
     public SocialMenuPage waitUntilFCBBeLoaded() {
-        waitUntilUrlContainsText("https://www.facebook.com/Deliveryauto");
+        isWaitUntilUrlContainsText("https://www.facebook.com/Deliveryauto");
         return this;
     }
 
     public SocialMenuPage waitUntilYTBBeLoaded() {
-        waitUntilUrlContainsText("https://www.youtube.com/channel/UC2ZxuQoIjvHGl2yR4FeS8qQ/featured");
+        isWaitUntilUrlContainsText("https://www.youtube.com/channel/UC2ZxuQoIjvHGl2yR4FeS8qQ/featured");
         return this;
     }
 
