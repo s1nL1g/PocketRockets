@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-
 public class RequiredFieldsPage extends HomePage {
 
     private static final String CLCLT_COST = "https://www.delivery-auto.com/uk-UA/CalculateCost";
