@@ -40,5 +40,4 @@ public class MobileMenuPage extends HomePage {
         getGooglePlayBtn().click();
         return this;
     }
-
 }
