@@ -86,4 +86,3 @@ public class SocialMenuPage extends HomePage {
         return driver.findElement(By.xpath(INST_PAGE));
     }
 }
-
