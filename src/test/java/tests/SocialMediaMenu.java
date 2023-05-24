@@ -48,3 +48,4 @@ public class SocialMediaMenu extends AbstractBaseTest {
         assertTrue(driver.getCurrentUrl().contains("https://www.instagram.com/deliverygroup_ua/"));
     }
 }
+
