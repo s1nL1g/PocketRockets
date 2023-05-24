@@ -8,6 +8,7 @@ import pages.LoginPage;
 import static org.testng.Assert.assertTrue;
 
 public class LoginTests extends AbstractBaseTest {
+
     @Test
     public void loginPositiveTest() {
         LoginPage loginPage = new LoginPage(driver);
@@ -17,6 +18,7 @@ public class LoginTests extends AbstractBaseTest {
         loginPage.setEmailField()
                 .setPassword()
                 .clickBtnEnter();
+
         assertTrue(loginPage.getMyAccountBtn().isDisplayed());
     }
 }
