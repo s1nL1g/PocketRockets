@@ -18,6 +18,7 @@ public class LoginTests extends AbstractBaseTest {
         loginPage.setEmailField()
                 .setPassword()
                 .clickBtnEnter();
+
         assertTrue(loginPage.getMyAccountBtn().isDisplayed());
     }
 }
