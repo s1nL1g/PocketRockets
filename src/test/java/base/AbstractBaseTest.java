@@ -48,6 +48,4 @@ abstract public class AbstractBaseTest extends AbstractBase {
     protected boolean urlContains(String urlPath) {
         return driver.getCurrentUrl().contains(urlPath);
     }
-
-
 }
