@@ -7,6 +7,7 @@ import pages.NecessaryFieldsPage;
 import static org.testng.Assert.assertTrue;
 
 public class NecessaryFieldsTest extends AbstractBaseTest {
+
     @Test
     public void necessaryFieldsTest() {
         NecessaryFieldsPage necessaryFieldsPage = new NecessaryFieldsPage(driver);
