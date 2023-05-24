@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 public class CommonActions {
+
     protected void moveCursor(WebElement element, WebDriver driver) {
         Actions actions = new Actions(driver);
         actions.moveToElement(element).build().perform();
