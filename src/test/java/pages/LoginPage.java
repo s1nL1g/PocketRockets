@@ -58,4 +58,3 @@ public class LoginPage extends HomePage {
         return waitUntilVisibilityOfElement("//p[contains(text(),'Мій кабінет')]");
     }
 }
-
