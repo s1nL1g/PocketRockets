@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Set;
 
 public class HomePage extends AbstractBasePage {
+
     private static final String BTN_LOGO = "//img[@alt='delivery group icon']";
     private static final String BTN_DROPDOWN_FAST_START = "//div[@class='fast-start']";
     private static final String COMPANY_NAVIGATION = "//p[contains(text(),'Клієнтам')]";
@@ -24,7 +25,6 @@ public class HomePage extends AbstractBasePage {
     }
 
     public WebElement getLogo() {
-
         return driver.findElement(By.xpath(BTN_LOGO));
     }
 
@@ -73,6 +73,7 @@ public class HomePage extends AbstractBasePage {
     public HomePage goToLastWindow() {
         Set<String> windowHandles = driver.getWindowHandles();
         List<String> windows = new ArrayList<>(windowHandles);
+
         driver.switchTo().window(windows.get(windows.size() - 1));
         return this;
     }
