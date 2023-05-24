@@ -54,7 +54,7 @@ public class LoginPage extends HomePage {
         return driver.findElement(By.xpath(LOGIN_MODAL_WINDOW));
     }
 
-    public WebElement getMyAccountBtn(){
+    public WebElement getMyAccountBtn() {
         return waitUntilVisibilityOfElement("//p[contains(text(),'Мій кабінет')]");
     }
 }

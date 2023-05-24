@@ -62,7 +62,7 @@ public class HomePage extends AbstractBasePage {
         return driver.findElement(By.xpath(INPUT_TRACKING));
     }
 
-    public WebElement getInputSearch(){
+    public WebElement getInputSearch() {
         return driver.findElement(By.xpath(INPUT_SEARCH));
     }
 }
