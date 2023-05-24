@@ -7,7 +7,7 @@ import pages.SocialMenuPage;
 
 import static org.testng.Assert.assertTrue;
 
-public class SocialMediaMenu extends AbstractBaseTest {
+public class SocialMediaMenuTest extends AbstractBaseTest {
 
     @Test
     public void youtubeTest() {
