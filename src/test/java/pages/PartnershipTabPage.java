@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-public class PartnershipTabPage extends HomePage{
+public class PartnershipTabPage extends HomePage {
 
     private static final String BCM_PARTNER_BTN = "//div[@class='become-partner']//a[@class='main-btn']";
     private static final String BUILD_MTRLS_PART = "//a[contains(text(),'Будівельні матеріали')]";
@@ -13,49 +13,49 @@ public class PartnershipTabPage extends HomePage{
     private static final String GO_EPICENTR_BTN = "//a[@href='https://epicentrk.ua']";
     private static final String EPICENTR_LOGO_BTN = "//img[@title='Епіцентр']";
 
-    public WebElement getBecomeAPartnerBtn(){
+    public WebElement getBecomeAPartnerBtn() {
         return driver.findElement(By.xpath(BCM_PARTNER_BTN));
     }
 
-    public WebElement getBuildMaterialsPart(){
+    public WebElement getBuildMaterialsPart() {
         return driver.findElement(By.xpath(BUILD_MTRLS_PART));
     }
 
-    public WebElement getGoEpicentrBtn(){
+    public WebElement getGoEpicentrBtn() {
         return driver.findElement(By.xpath(GO_EPICENTR_BTN));
     }
 
-    public WebElement getEpicentrLogoBtn(){
+    public WebElement getEpicentrLogoBtn() {
         return driver.findElement(By.xpath(EPICENTR_LOGO_BTN));
     }
 
-    public PartnershipTabPage clickBecomeAPartner(){
+    public PartnershipTabPage clickBecomeAPartner() {
         getBecomeAPartnerBtn().click();
         return this;
     }
 
-    public PartnershipTabPage clickBuildMaterials(){
+    public PartnershipTabPage clickBuildMaterials() {
         getBuildMaterialsPart().click();
         return this;
     }
 
-    public PartnershipTabPage clickGoEpicentrBtn(){
+    public PartnershipTabPage clickGoEpicentrBtn() {
         getGoEpicentrBtn().click();
         return this;
     }
 
-    public WebElement getElementToHover(){
+    public WebElement getElementToHover() {
         return driver.findElement(By.xpath(EPICENTR_FRAME));
     }
 
-    public PartnershipTabPage hoverCursorToGoBtn(){
+    public PartnershipTabPage hoverCursorToGoBtn() {
         Actions actions = new Actions(driver);
 
         actions.moveToElement(getElementToHover()).perform();
         return this;
     }
 
-    public PartnershipTabPage waitUntilBeVisible(){
+    public PartnershipTabPage waitUntilBeVisible() {
         waitUntilElementToBeClickable(GO_EPICENTR_BTN);
         return this;
     }
