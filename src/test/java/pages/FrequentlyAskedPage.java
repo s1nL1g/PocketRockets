@@ -21,93 +21,93 @@ public class FrequentlyAskedPage extends HomePage {
     private static final String PACKAGING_THM = "//label[@class='questions__label'][contains(text(),'Як повинен бути упакований вантаж?')]";
     private static final String PACKAGING_INFO = "//h2[@class='answer__title'][contains(text(),'Як повинен бути упакований вантаж?')]";
 
-    public WebElement getInsuranceCostThm(){
+    public WebElement getInsuranceCostThm() {
         return driver.findElement(By.xpath(INSURANCE_COST_THM));
     }
 
-    public WebElement getInsuranceCostInfo(){
+    public WebElement getInsuranceCostInfo() {
         return driver.findElement(By.xpath(INSURANCE_COST_INFO));
     }
 
-    public WebElement getDiscountThm(){
+    public WebElement getDiscountThm() {
         return driver.findElement(By.xpath(DISCOUNT_THM));
     }
 
-    public WebElement getDiscountInfo(){
+    public WebElement getDiscountInfo() {
         return driver.findElement(By.xpath(DISCOUNT_INFO));
     }
 
-    public WebElement getChangeCityThm(){
+    public WebElement getChangeCityThm() {
         return driver.findElement(By.xpath(CHANGE_CITY_THM));
     }
 
-    public WebElement getChangeCityInfo(){
+    public WebElement getChangeCityInfo() {
         return driver.findElement(By.xpath(CHANGE_CITY_INFO));
     }
 
-    public WebElement getChangeRecipientThm(){
+    public WebElement getChangeRecipientThm() {
         return driver.findElement(By.xpath(CHANGE_RECIPIENT_THM));
     }
 
-    public WebElement getChangeRecipientInfo(){
+    public WebElement getChangeRecipientInfo() {
         return driver.findElement(By.xpath(CHANGE_RECIPIENT_INFO));
     }
 
-    public WebElement getPackageTrackingThm(){
+    public WebElement getPackageTrackingThm() {
         return driver.findElement(By.xpath(PACKAGE_TRACKING_THM));
     }
 
-    public WebElement getPackageTrackingInfo(){
+    public WebElement getPackageTrackingInfo() {
         return driver.findElement(By.xpath(PACKAGE_TRACKING_INFO));
     }
 
-    public WebElement getCompensationThm(){
+    public WebElement getCompensationThm() {
         return driver.findElement(By.xpath(COMPENSATION_THM));
     }
 
-    public WebElement getCompensationInfo(){
+    public WebElement getCompensationInfo() {
         return driver.findElement(By.xpath(COMPENSATION_INFO));
     }
 
-    public WebElement getPackagingThm(){
+    public WebElement getPackagingThm() {
         return driver.findElement(By.xpath(PACKAGING_THM));
     }
 
-    public WebElement getPackagingInfo(){
+    public WebElement getPackagingInfo() {
         return driver.findElement(By.xpath(PACKAGING_INFO));
     }
 
-    public FrequentlyAskedPage clickInsuranceCost(){
+    public FrequentlyAskedPage clickInsuranceCost() {
         getInsuranceCostThm().click();
         return this;
     }
 
-    public FrequentlyAskedPage clickDiscount(){
+    public FrequentlyAskedPage clickDiscount() {
         getDiscountThm().click();
         return this;
     }
 
-    public FrequentlyAskedPage clickChangeCity(){
+    public FrequentlyAskedPage clickChangeCity() {
         getChangeCityThm().click();
         return this;
     }
 
-    public FrequentlyAskedPage clickChangeRecipient(){
+    public FrequentlyAskedPage clickChangeRecipient() {
         getChangeRecipientThm().click();
         return this;
     }
 
-    public FrequentlyAskedPage clickPackageTracking(){
+    public FrequentlyAskedPage clickPackageTracking() {
         getPackageTrackingThm().click();
         return this;
     }
 
-    public FrequentlyAskedPage clickCompensation(){
+    public FrequentlyAskedPage clickCompensation() {
         getCompensationThm().click();
         return this;
     }
 
-    public FrequentlyAskedPage clickPackaging(){
+    public FrequentlyAskedPage clickPackaging() {
         getPackagingThm().click();
         return this;
     }
