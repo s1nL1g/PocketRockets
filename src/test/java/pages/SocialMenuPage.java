@@ -4,10 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-
 public class SocialMenuPage extends HomePage {
 
     private static final String YTB_BTN = "//img[@alt='youtube']";
@@ -89,6 +85,5 @@ public class SocialMenuPage extends HomePage {
     public WebElement getInstagramPage(){
         return driver.findElement(By.xpath(INST_PAGE));
     }
-
 }
 
