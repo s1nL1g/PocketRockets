@@ -73,4 +73,3 @@ public class HomePage extends AbstractBasePage {
         return this;
     }
 }
-

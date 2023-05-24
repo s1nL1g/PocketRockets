@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage extends HomePage {
+
     private static final String BTN_CLOSE_LOGIN_PAGE = "//label[@class='login-block__login-btn']";
     private static final String INPUT_EMAIL = "//input[@name='UserName']";
     private static final String INPUT_PASSWORD = "//input[@name='Password']";

@@ -12,6 +12,7 @@ import java.time.Duration;
 
 @Slf4j
 abstract public class AbstractBaseTest extends AbstractBase {
+
     protected static WebDriver driver;
 
     public static String WEBDRIVER = "https://www.delivery-auto.com/";
@@ -48,6 +49,4 @@ abstract public class AbstractBaseTest extends AbstractBase {
     protected boolean urlContains(String urlPath) {
         return driver.getCurrentUrl().contains(urlPath);
     }
-
-
 }
