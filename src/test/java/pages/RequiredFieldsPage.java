@@ -11,19 +11,19 @@ import java.time.Duration;
 
 public class RequiredFieldsPage extends HomePage {
 
-    private static final String CLCLT_COST = "https://www.delivery-auto.com/uk-UA/CalculateCost";
+    private static final String CALCULATE_COST = "https://www.delivery-auto.com/uk-UA/CalculateCost";
     private static final String FROM_FLD = "//div[@class='calc-form__input-wrap calc-form__yellow-arrow time-line time-line--first-point']//input[@class='ui-autocomplete-input ng-invalid ng-invalid-required ng-touched']";
-    private static final String TO_FLD = "//div[@class='calc-form__input-wrap']//input[@class='ui-autocomplete-input ng-invalid ng-invalid-required ng-touched']";
-    private static final String WEIGHT_FLD = "//input[@class='calc-form__input--short time-line__input ng-pristine ng-valid-min ng-valid-max ng-invalid ng-invalid-required ng-touched']";
-    private static final String TTL_VOLUME_FLD = "//input[@class='calc-form__input--short ng-pristine ng-valid-min ng-valid-max ng-invalid ng-invalid-required ng-touched']";
-    private static final String CLCLT_BTN = "//div[@class='type-cargo-1 time-line']//button[@ng-click='Calculate(true)']";
+    private static final String TO_FIELD = "//div[@class='calc-form__input-wrap']//input[@class='ui-autocomplete-input ng-invalid ng-invalid-required ng-touched']";
+    private static final String WEIGHT_FIELD = "//input[@class='calc-form__input--short time-line__input ng-pristine ng-valid-min ng-valid-max ng-invalid ng-invalid-required ng-touched']";
+    private static final String TOTAL_VOLUME_FIELD = "//input[@class='calc-form__input--short ng-pristine ng-valid-min ng-valid-max ng-invalid ng-invalid-required ng-touched']";
+    private static final String CALCULATE_BTN = "//div[@class='type-cargo-1 time-line']//button[@ng-click='Calculate(true)']";
 
     public RequiredFieldsPage(WebDriver driver) {
         super(driver);
     }
 
     public RequiredFieldsPage goToCalculateCost() {
-        driver.get(CLCLT_COST);
+        driver.get(CALCULATE_COST);
         return this;
     }
 
@@ -32,19 +32,19 @@ public class RequiredFieldsPage extends HomePage {
     }
 
     public WebElement getToField() {
-        return driver.findElement(By.xpath(TO_FLD));
+        return driver.findElement(By.xpath(TO_FIELD));
     }
 
     public WebElement getWeightField() {
-        return driver.findElement(By.xpath(WEIGHT_FLD));
+        return driver.findElement(By.xpath(WEIGHT_FIELD));
     }
 
     public WebElement getTotalVolumeField() {
-        return driver.findElement(By.xpath(TTL_VOLUME_FLD));
+        return driver.findElement(By.xpath(TOTAL_VOLUME_FIELD));
     }
 
     public WebElement getCalculateBtn() {
-        return driver.findElement(By.xpath(CLCLT_BTN));
+        return driver.findElement(By.xpath(CALCULATE_BTN));
     }
 
     public RequiredFieldsPage clickCalculateBtn() {
@@ -53,7 +53,7 @@ public class RequiredFieldsPage extends HomePage {
     }
 
     public WebElement scrollToCalculateBtn() {
-        WebElement calcBtn = driver.findElement(By.xpath(CLCLT_BTN));
+        WebElement calcBtn = driver.findElement(By.xpath(CALCULATE_BTN));
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView(true);", calcBtn);
         return null;
@@ -66,7 +66,7 @@ public class RequiredFieldsPage extends HomePage {
     }
 
     public RequiredFieldsPage waitUntilClicable() {
-        waitUntilElementToBeClickable(String.valueOf(By.xpath(CLCLT_BTN)));
+        waitUntilElementToBeClickable(String.valueOf(By.xpath(CALCULATE_BTN)));
         return this;
     }
 }
