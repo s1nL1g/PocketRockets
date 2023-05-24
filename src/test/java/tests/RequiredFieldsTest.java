@@ -11,7 +11,6 @@ public class RequiredFieldsTest extends AbstractBaseTest {
 
     @Test
     public void requiredFieldsTest() {
-
         RequiredFieldsPage requiredFieldsPage = new RequiredFieldsPage(driver);
 
         requiredFieldsPage.goToCalculateCost()
