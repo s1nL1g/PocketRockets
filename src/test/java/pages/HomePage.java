@@ -25,7 +25,6 @@ public class HomePage extends AbstractBasePage {
     }
 
     public WebElement getLogo() {
-
         return driver.findElement(By.xpath(BTN_LOGO));
     }
 
