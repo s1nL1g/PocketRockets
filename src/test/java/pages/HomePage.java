@@ -11,12 +11,12 @@ import java.util.Set;
 
 public class HomePage extends AbstractBasePage {
 
-    private static final String BTN_LOGO = "//img[@alt='delivery group icon']";
-    private static final String BTN_DROPDOWN_FAST_START = "//div[@class='fast-start']";
+    private static final String LOGO_BUTTON = "//img[@alt='delivery group icon']";
+    private static final String FAST_START_DROPDOWN = "//div[@class='fast-start']";
     private static final String COMPANY_NAVIGATION = "//p[contains(text(),'Клієнтам')]";
-    private static final String BTN_REGISTRATION = "//label[@class='login-block__autorization-btn']";
-    private static final String BTN_GIFT_CLOSE = "//div[@class='gift-close']";
-    private static final String BTN_ENTER = "//label[@class='login-block__login-btn']";
+    private static final String REGISTRATION_BUTTON = "//label[@class='login-block__autorization-btn']";
+    private static final String GIFT_CLOSE = "//div[@class='gift-close']";
+    private static final String ENTER_BUTTON = "//label[@class='login-block__login-btn']";
     private static final String INPUT_TRACKING = "//input[@class='tracking__input']";
     private static final String INPUT_SEARCH = "//input[@class='main-search__input']";
     private static final String CALCULATE_COST = "//img[@alt='calc']/following-sibling::p";
@@ -26,15 +26,15 @@ public class HomePage extends AbstractBasePage {
     }
 
     public WebElement getLogo() {
-        return driver.findElement(By.xpath(BTN_LOGO));
+        return driver.findElement(By.xpath(LOGO_BUTTON));
     }
 
     public WebElement getFastStart() {
-        return driver.findElement(By.xpath(BTN_DROPDOWN_FAST_START));
+        return driver.findElement(By.xpath(FAST_START_DROPDOWN));
     }
 
     public WebElement getRegistrationBtn() {
-        return driver.findElement(By.xpath(BTN_REGISTRATION));
+        return driver.findElement(By.xpath(REGISTRATION_BUTTON));
     }
 
     public void clickRegistrationBtn() {
@@ -42,16 +42,16 @@ public class HomePage extends AbstractBasePage {
     }
 
     public HomePage clickBtnGiftClose() {
-        driver.findElement(By.xpath(BTN_GIFT_CLOSE)).click();
+        driver.findElement(By.xpath(GIFT_CLOSE)).click();
         return this;
     }
 
     public WebElement getEnterBtn() {
-        return driver.findElement(By.xpath(BTN_ENTER));
+        return driver.findElement(By.xpath(ENTER_BUTTON));
     }
 
     public WebElement getLoginBtn() {
-        return driver.findElement(By.xpath(BTN_ENTER));
+        return driver.findElement(By.xpath(ENTER_BUTTON));
     }
 
     public HomePage clickLoginBtn() {
