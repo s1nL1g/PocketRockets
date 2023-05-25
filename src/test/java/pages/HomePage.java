@@ -19,6 +19,7 @@ public class HomePage extends AbstractBasePage {
     private static final String BTN_ENTER = "//label[@class='login-block__login-btn']";
     private static final String INPUT_TRACKING = "//input[@class='tracking__input']";
     private static final String INPUT_SEARCH = "//input[@class='main-search__input']";
+    private static final String CALCULATE_COST = "//img[@alt='calc']/following-sibling::p";
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -76,5 +77,9 @@ public class HomePage extends AbstractBasePage {
 
         driver.switchTo().window(windows.get(windows.size() - 1));
         return this;
+    }
+
+    public WebElement getCalculateCost() {
+        return driver.findElement(By.xpath(CALCULATE_COST));
     }
 }
