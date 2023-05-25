@@ -21,7 +21,7 @@ public class LoginPage extends HomePage {
     }
 
     public void closeLoginPage() {
-        driver.findElement(By.xpath(BTN_CLOSE_LOGIN_PAGE)).click();
+        driver.findElement(By.xpath(CLOSE_LOGIN_PAGE)).click();
     }
 
     public WebElement getEmailField() {
