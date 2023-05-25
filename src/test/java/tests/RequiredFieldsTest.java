@@ -17,7 +17,7 @@ public class RequiredFieldsTest extends AbstractBaseTest {
                 .waitVisibility()
                 .clickCalculateBtn();
 
-        String expectedBorderColor = "rgb(255, 0, 0)";
+        String expectedBorderColor = requiredFieldsPage.RED_COLOR;
 
         String borderColorFromField = (String) ((JavascriptExecutor) driver).executeScript("return window.getComputedStyle(arguments[0]).getPropertyValue('border-color');", requiredFieldsPage.getFromField());
         String borderColorToField = (String) ((JavascriptExecutor) driver).executeScript("return window.getComputedStyle(arguments[0]).getPropertyValue('border-color');", requiredFieldsPage.getToField());
