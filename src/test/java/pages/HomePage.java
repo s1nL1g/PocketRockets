@@ -127,4 +127,8 @@ public class HomePage extends AbstractBasePage {
     public WebElement getFindARepresentative() {
         return driver.findElement(By.xpath(FIND_A_REPRESENTATIVE));
     }
+
+    public WebElement getCalculateCost() {
+        return waitUntilVisibilityOfElement(CALCULATE_COST);
+    }
 }
