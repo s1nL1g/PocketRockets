@@ -84,6 +84,7 @@ public class HomePage extends AbstractBasePage {
         driver.switchTo().window(windows.get(windows.size() - 1));
         return this;
     }
+
     public WebElement getViddileniaBTN() {
         return driver.findElement(By.xpath(VIDDILENIA_BUTTON));
     }
@@ -125,5 +126,9 @@ public class HomePage extends AbstractBasePage {
 
     public WebElement getFindARepresentative() {
         return driver.findElement(By.xpath(FIND_A_REPRESENTATIVE));
+    }
+
+    public WebElement getCalculateCost() {
+        return waitUntilVisibilityOfElement(CALCULATE_COST);
     }
 }
