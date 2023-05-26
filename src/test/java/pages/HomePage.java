@@ -80,6 +80,6 @@ public class HomePage extends AbstractBasePage {
     }
 
     public WebElement getCalculateCost() {
-        return driver.findElement(By.xpath(CALCULATE_COST));
+        return waitUntilVisibilityOfElement(CALCULATE_COST);
     }
 }

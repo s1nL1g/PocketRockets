@@ -22,7 +22,7 @@ public class CalculateCostPage extends AbstractBasePage {
     private static final String FIELD_QUANTITY = "//input[@id='t8']";
 
     public WebElement getInputRout1() {
-        return driver.findElement(By.xpath(ROUTE_FIRST_FIELD));
+        return waitUntilVisibilityOfElement(ROUTE_FIRST_FIELD);
     }
 
     public WebElement getDataSend() {
