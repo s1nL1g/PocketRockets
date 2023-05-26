@@ -15,7 +15,7 @@ public class CalculateCostPage extends AbstractBasePage {
     private static final String ROUTE_SECOND_FIELD = "//input[@class = 'ui-autocomplete-input']";
     private static final String MSG_WARNING_COST = "//div[@id='warningCost']";
     private static final String DELIVERY_TYPE = "//select[@id='DeliveryType']";
-    private static final String DELIVERY_DESTINATION = "//a[@id='ui-id-2349']";//Івангород //ul[contains(@class, "ui-menu")]/li[9]
+    private static final String DELIVERY_DESTINATION = "//a[@id='ui-id-2349']";
     private static final String DATA_SEND = "//input[@id='DateSend']";
     private static final String FIELD_DECLARED_COST = "//input[@id='t3']";
     private static final String FIELD_CASH_ON_DELIVERY = "//input[@id='appl_COD']";
