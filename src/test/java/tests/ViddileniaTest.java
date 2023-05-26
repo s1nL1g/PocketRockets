@@ -7,16 +7,16 @@ import pages.HomePage;
 import pages.ViddileniaPage;
 
 public class ViddileniaTest extends AbstractBaseTest {
-    private String viddileniaPageUrl = "https://www.delivery-auto.com/uk-UA/Representatives/Index";
+    public String viddileniaPageUrl = "https://www.delivery-auto.com/uk-UA/Representatives/Index";
 
     @Test
-    public void checkCrosingFromHomePageToViddileniaPage() {
+    public void checkCrossingFromHomePageToViddileniaPage() {
         HomePage homePage = new HomePage(driver);
         ViddileniaPage viddileniaPage = new ViddileniaPage(driver);
 
-        homePage.clickViddilenia();
+        homePage
+                .clickViddilenia();
 
-        String resultURL = driver.getCurrentUrl();
-        Assert.assertTrue(resultURL.equals(viddileniaPageUrl));
+        Assert.assertEquals(viddileniaPageUrl, viddileniaPage.getUrl());
     }
 }
