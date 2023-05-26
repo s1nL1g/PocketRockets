@@ -20,11 +20,11 @@ public class HomePage extends AbstractBasePage {
     private static final String INPUT_TRACKING = "//input[@class='tracking__input']";
     private static final String INPUT_SEARCH = "//input[@class='main-search__input']";
     private static final String BTN_LANGUAGE = "//div[@class='switch-lang__btn dropdown-arrow']";
-    private static final String BTN_ENGLISHLANGUAGE = "//a[@href='/en-us']";
-    private static final String TRACKORDERS = "//div[@class='tracking__item']";
-    private static final String CALCULATECOST = "//p[contains(text(),'Calculate cost')]";
-    private static final String CALLACOURIER = "//p[contains(text(),'Call a courier')]";
-    private static final String FINDAREPRESENTATIVE = "//p[contains(text(),'Find a representative')]";
+    private static final String BTN_ENGLISH_LANGUAGE = "//a[@href='/en-us']";
+    private static final String TRACK_ORDERS = "//div[@class='tracking__item']";
+    private static final String CALCULATE_COST = "//p[contains(text(),'Calculate cost')]";
+    private static final String CALL_A_COURIER = "//p[contains(text(),'Call a courier')]";
+    private static final String FIND_A_REPRESENTATIVE = "//p[contains(text(),'Find a representative')]";
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -94,7 +94,7 @@ public class HomePage extends AbstractBasePage {
     }
 
     public WebElement getEnglishLanguage() {
-        return driver.findElement(By.xpath(BTN_ENGLISHLANGUAGE));
+        return driver.findElement(By.xpath(BTN_ENGLISH_LANGUAGE));
     }
 
     public HomePage choseEnglishLanguage() {
@@ -103,18 +103,18 @@ public class HomePage extends AbstractBasePage {
     }
 
     public WebElement getTrackOrders() {
-        return driver.findElement(By.xpath(TRACKORDERS));
+        return driver.findElement(By.xpath(TRACK_ORDERS));
     }
 
     public WebElement getCalculateCost() {
-        return driver.findElement(By.xpath(CALCULATECOST));
+        return driver.findElement(By.xpath(CALCULATE_COST));
     }
 
     public WebElement getCallaACourier() {
-        return driver.findElement(By.xpath(CALLACOURIER));
+        return driver.findElement(By.xpath(CALL_A_COURIER));
     }
 
     public WebElement getFindARepresentative() {
-        return driver.findElement(By.xpath(FINDAREPRESENTATIVE));
+        return driver.findElement(By.xpath(FIND_A_REPRESENTATIVE));
     }
 }

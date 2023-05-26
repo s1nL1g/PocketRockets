@@ -8,10 +8,10 @@ import static org.testng.Assert.assertEquals;
 
 public class LanguageChangeTest extends AbstractBaseTest {
 
-    private String trackOrdersExpect = "Track orders";
-    private String calculateCostExpect = "Calculate cost";
-    private String callACourierExpect = "Call a courier";
-    private String findARepresentativeExpected = "Find a representative";
+    public String trackOrdersExpect = "Track orders";
+    public String calculateCostExpect = "Calculate cost";
+    public String callACourierExpect = "Call a courier";
+    public String findARepresentativeExpected = "Find a representative";
 
     @Test
     public void checkLanguageChangeTest() {
