@@ -7,6 +7,7 @@ import pages.HomePage;
 import pages.ViddileniaPage;
 
 public class ViddileniaTest extends AbstractBaseTest {
+
     public String viddileniaPageUrl = "https://www.delivery-auto.com/uk-UA/Representatives/Index";
 
     @Test
