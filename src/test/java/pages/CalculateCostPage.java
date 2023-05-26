@@ -40,6 +40,7 @@ public class CalculateCostPage extends AbstractBasePage {
     public String getDefaultValueDeclaredCost() {
         return getFieldDeclaredCost().getAttribute("value");
     }
+
     public WebElement getFieldCashOnDelivery() {
         return waitUntilVisibilityOfElement(FIELD_CASH_ON_DELIVERY);
     }
@@ -56,4 +57,3 @@ public class CalculateCostPage extends AbstractBasePage {
         return getFieldQuantity().getAttribute("value");
     }
 }
-
