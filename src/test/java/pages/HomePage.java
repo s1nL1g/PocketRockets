@@ -116,10 +116,6 @@ public class HomePage extends AbstractBasePage {
         return driver.findElement(By.xpath(TRACK_ORDERS));
     }
 
-    public WebElement getCalculateCost() {
-        return driver.findElement(By.xpath(CALCULATE_COST));
-    }
-
     public WebElement getCallaACourier() {
         return driver.findElement(By.xpath(CALL_A_COURIER));
     }
