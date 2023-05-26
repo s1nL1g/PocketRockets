@@ -84,6 +84,7 @@ public class HomePage extends AbstractBasePage {
         driver.switchTo().window(windows.get(windows.size() - 1));
         return this;
     }
+
     public WebElement getViddileniaBTN() {
         return driver.findElement(By.xpath(VIDDILENIA_BUTTON));
     }
